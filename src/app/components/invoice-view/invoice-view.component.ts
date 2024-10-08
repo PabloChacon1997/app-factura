@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-invoice-view',
@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styles: ``
 })
 export class InvoiceViewComponent {
-
+  @Input() name!: string;
+  @Input() id!: number;
 }
